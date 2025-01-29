@@ -6,10 +6,15 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Header */}
-      <header className="bg-[#A69B83] px-4 py-3 flex items-center justify-between">
+      <header className="bg-[#A29875] px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-white text-2xl font-serif">
-          Purity
+          <Image
+          src="/image1.png"
+          alt="logo"
+          width={200}
+          height={139}
+          />
         </Link>
 
         {/* Search Bar */}
@@ -43,14 +48,14 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Text Content */}
           <div className="space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif tracking-wide leading-tight">
+            <h1 className="text-black text-3xl md:text-4xl lg:text-5xl font-serif tracking-wide leading-tight">
               IMPECCABLE CRAFTSMANSHIP AND FINESSE
             </h1>
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <p className="text-bl text-[#787054] text-lg leading-relaxed">
               An example of intricate workmanship and detail, elegant necklaces and long and short chains form a part of
               our desirable collection.
             </p>
-            <button className="bg-[#A69B83] text-white px-8 py-3 rounded hover:bg-opacity-90 transition-colors">
+            <button className="bg-[#787054] text-white px-8 py-3 rounded hover:bg-opacity-90 transition-colors">
               Explore Now
             </button>
           </div>
@@ -58,9 +63,10 @@ export default function Home() {
           {/* Image */}
           <div className="relative aspect-[4/5] md:aspect-auto md:h-[600px]">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot-Gi1oVddpzlFnIL1C69X37R1JUH1DqZ.png"
+              src="/image.png"
               alt="Elegant jewelry model"
-              fill
+              width={421.38}
+              height={573.59}
               className="object-cover rounded-lg"
               priority
             />
@@ -70,4 +76,3 @@ export default function Home() {
     </main>
   )
 }
-
